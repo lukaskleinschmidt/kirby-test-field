@@ -3,8 +3,8 @@
 return function($page, $model) {
 
   $options = array(
-    'test-1' => 'Test 2',
-    'test-2' => 'Test 2',
+    'value-1' => 'Test 1',
+    'value-2' => 'Test 2',
   );
 
   $form = new Kirby\Panel\Form(array(
@@ -12,9 +12,6 @@ return function($page, $model) {
       'label'    => 'Label',
       'type'     => 'checkboxes',
       'options'  => $options,
-      'default'  => key($options),
-      'required' => true,
-      'readonly' => count($options) == 1 ? true : false,
       'icon'     => 'chevron-down',
     )
   ));

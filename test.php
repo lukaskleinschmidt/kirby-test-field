@@ -2,7 +2,6 @@
 
 class TestField extends InputField {
 
-
   public function routes() {
     return array(
       array(
@@ -13,7 +12,6 @@ class TestField extends InputField {
       ),
     );
   }
-
 
   public function content() {
     return parent::content() . '<a href="' . purl($this->model(), implode('/', array(
